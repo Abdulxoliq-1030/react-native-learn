@@ -5,6 +5,7 @@ import { Pressable, Text, View } from "react-native"
 const Users = ({ navigation, route }: any) => {
     const [count, setCount] = useState(5)
     const [users, setUsers] = useState([])
+
     const getUsers = async () => {
         const { data } = await axios.get("https://jsonplaceholder.typicode.com/users")
         setUsers(data)

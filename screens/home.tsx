@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Button } from "react-native"
+import Great from "../components/great";
 
 
 
@@ -8,6 +9,7 @@ import { View, StyleSheet, Button } from "react-native"
 const Home = ({ navigation }: any) => {
     return (
         <View style={[styles.center, { top: 10 }]}>
+            <Great name="Abdulxoliq" />
             <Button
                 title="Go to Abdulxoliq's profile"
                 onPress={() =>
